@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>제11회 윤선생 학력평가(YSAT) | 결과 리포트와 상담으로 잡는 2학기 영어 방향</title>
+<meta name="description" content="제11회 YSAT 윤선생 학력평가. 전국 기준 영어 실력 진단부터 결과 리포트, 선생님 상담을 통한 2학기 학습 방향 설정까지 무료로 경험하세요. 사전 접수 8월 18일~8월 31일." />
+<meta property="og:title" content="제11회 윤선생 학력평가(YSAT) | 무료 사전 접수" />
+<meta property="og:description" content="2학기 영어 공부 전, 실력 진단과 결과 리포트, 선생님 상담으로 우리 아이 학습 방향을 잡아보세요. 사전 접수 8/18~8/31, 응시료 0원." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="hero_main.png" />
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" />
+
+<style>
+    /* =========================================================
+       제11회 YSAT 랜딩 페이지 v2
+       - Goal: 학부모 타겟 / 일정 안내 / 사전 접수 전환 강화
+       - Tone: 활기참 + 강한 전환 유도 (브랜드 레드·옐로 유지)
+       ========================================================= */
+
+    :root {
+        --primary-red: #e02424;
+        --primary-red-dark: #b71c1c;
+        --primary-yellow: #ffcc00;
+        --yellow-soft: #fff6cc;
+        --text-black: #111;
+        --text-gray: #555;
+        --text-light: #777;
+        --bg-gray: #f4f4f4;
+        --bg-soft: #fff8e6;
+        --line: #ececec;
+        --white: #fff;
+        --black: #151515;
+        --btn-purple: linear-gradient(135deg, #6a35ff, #4b22c7);
+        --btn-pink: linear-gradient(135deg, #ff4095, #e61e73);
+        --btn-red: linear-gradient(135deg, #ff5a3c, #e02424);
+        --shadow-sm: 0 6px 16px rgba(0,0,0,0.06);
+        --shadow-md: 0 14px 32px rgba(0,0,0,0.10);
+        --shadow-red: 0 16px 34px rgba(224, 36, 36, 0.22);
+        --radius-sm: 12px;
+        --radius-md: 18px;
+        --radius-lg: 26px;
+        --max: 1280px;
+        --safe-bottom: env(safe-area-inset-bottom, 0px);
+        /* 숫자·영문 시그니처 폰트 (한글은 Pretendard로 폴백) */
+        --font-fig: "Space Grotesk", "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Segoe UI", sans-serif;
+        background-color: #ececec;
+        color: var(--text-black);
+        line-height: 1.5;
+        word-break: keep-all;
+        overflow-x: hidden;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        background:
+            radial-gradient(circle at 8% 8%, rgba(255, 204, 0, .20), transparent 26%),
+            radial-gradient(circle at 92% 12%, rgba(224, 36, 36, .12), transparent 24%),
+            #ececec;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+
+    /* Quality floor: 키보드 포커스 가시화 */
+    a:focus-visible,
+    button:focus-visible {
+        outline: 3px solid var(--primary-red);
+        outline-offset: 3px;
+        border-radius: 6px;
+    }
+    .schedule-cta:focus-visible,
+    .countdown-link:focus-visible,
+    .eyebrow-dark:focus-visible { outline-color: var(--primary-yellow); }
+
+    .page-wrapper {
+        width: min(100%, var(--max));
+        margin: 0 auto;
+        background-color: var(--white);
+        box-shadow: 0 0 28px rgba(0,0,0,0.08);
+        overflow-x: clip;
+    }
+
+    .container {
+        width: min(100% - 48px, 1120px);
+        margin: 0 auto;
+    }
+
+    .text-center { text-align: center; }
+
+    .highlight { color: var(--primary-red); font-weight: 900; }
+
+    .underline-mark {
+        background: linear-gradient(to top, #ffe2a8 42%, transparent 42%);
+        padding: 0 2px;
+    }
+
+    .section {
+        padding: clamp(66px, 8vw, 112px) 0;
+        border-bottom: 8px solid var(--bg-gray);
+    }
+
+    .section-title {
+        margin: 0 0 14px;
+        font-size: clamp(32px, 4.8vw, 54px);
+        line-height: 1.16;
+        font-weight: 900;
+        letter-spacing: -0.05em;
+    }
+
+    .section-desc {
+        max-width: 700px;
+        margin: 0 auto 36px;
+        color: var(--text-gray);
+        font-size: clamp(18px, 2.2vw, 22px);
+        font-weight: 600;
+        line-height: 1.6;
+        letter-spacing: -0.025em;
+    }
+
+    .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        margin-bottom: 14px;
+        padding: 7px 14px;
+        border-radius: 999px;
+        background: #fff2f2;
+        color: var(--primary-red);
+        border: 1px solid rgba(224, 36, 36, .2);
+        font-size: 12px;
+        font-weight: 900;
+        letter-spacing: .02em;
+    }
+
+    .eyebrow::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--primary-red);
+    }
+
+    .desktop-only { display: none; }
+
+    /* ====================== Typography signature (figures) ======================
+       이 제품의 고유 언어 = 점수·단계·기간. 숫자/영문에만 Space Grotesk를 적용해
+       "측정값"의 인상을 주고, 한글은 Pretendard로 폴백되도록 둔다. */
+    .tl-num,
+    .trust-num,
+    .countdown-timer b,
+    .sat-badge b em,
+    .ysat-en,
+    .hero-float b {
+        font-family: var(--font-fig);
+        font-variant-numeric: tabular-nums;
+    }
+
+    /* ====================== Countdown Banner ====================== */
+    .countdown-banner {
+        position: sticky;
+        top: 0;
+        z-index: 1100;
+        background: linear-gradient(90deg, var(--primary-red), #ff6a3d);
+        color: var(--white);
+        box-shadow: 0 8px 18px rgba(224,36,36,.22);
+    }
+
+    .countdown-inner {
+        width: min(100% - 32px, 1120px);
+        min-height: 58px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        gap: 14px;
+        align-items: center;
+        padding: 8px 0;
+    }
+
+    .countdown-copy {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 6px 12px;
+    }
+
+    .cd-badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 3px 10px;
+        border-radius: 999px;
+        background: #fff;
+        color: var(--primary-red);
+        font-size: 11px;
+        font-weight: 900;
+        letter-spacing: -0.02em;
+        white-space: nowrap;
+        animation: cd-pulse 1.6s ease-in-out infinite;
+    }
+
+    @keyframes cd-pulse {
+        0%, 100% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.08); opacity: .82; }
+    }
+
+    .countdown-copy strong { font-size: 17px; font-weight: 900; letter-spacing: -0.04em; }
+    .countdown-copy span:not(.cd-badge) { color: rgba(255,255,255,.88); font-size: 14px; font-weight: 700; }
+
+    .countdown-timer {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        min-height: 34px;
+        padding: 0 13px;
+        border-radius: 999px;
+        background: rgba(0,0,0,.22);
+        white-space: nowrap;
+    }
+
+    .countdown-timer span { color: rgba(255,255,255,.74); font-size: 12px; font-weight: 800; }
+    .countdown-timer b {
+        font-size: 18px; font-weight: 900; letter-spacing: -0.03em;
+        font-variant-numeric: tabular-nums;
+    }
+
+    .countdown-link {
+        min-height: 34px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 14px;
+        border-radius: 999px;
+        background: var(--white);
+        color: var(--primary-red);
+        font-size: 13px;
+        font-weight: 900;
+        white-space: nowrap;
+    }
+
+    /* ====================== Header ====================== */
+    header.site-header {
+        position: sticky;
+        top: 50px;
+        z-index: 1000;
+        background: rgba(255,255,255,.94);
+        border-bottom: 1px solid #eee;
+        backdrop-filter: blur(12px);
+    }
+
+    .header-inner {
+        width: min(100% - 40px, 1060px);
+        min-height: 64px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .logo { color: var(--primary-red); font-size: 17px; font-weight: 900; letter-spacing: -1px; }
+    .logo b { color: #222; }
+
+    .header-nav {
+        display: none;
+        align-items: center;
+        gap: 24px;
+        color: #444;
+        font-size: 14px;
+        font-weight: 800;
+    }
+    .header-nav a:hover { color: var(--primary-red); }
+
+    .header-cta {
+        display: none;
+        align-items: center;
+        gap: 8px;
+    }
+    .header-cta a {
+        min-height: 40px;
+        display: inline-flex;
+        align-items: center;
+        padding: 0 16px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 900;
+    }
+    .header-cta .hc-ghost { color: var(--primary-red); border: 1.5px solid var(--primary-red); }
+    .header-cta .hc-fill { color: #fff; background: var(--btn-red); box-shadow: var(--shadow-red); }
+
+    .badge-live {
+        background: #222; color: #fff; font-size: 11px;
+        padding: 5px 11px; border-radius: 999px; font-weight: 900; white-space: nowrap;
+    }
+
+    /* ====================== Hero ====================== */
+    .hero-new {
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(180deg, #fff1ea 0%, #fff8f3 48%, #ffffff 100%);
+        padding: clamp(54px, 7vw, 96px) 0 clamp(42px, 5vw, 66px);
+    }
+
+    .hero-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 36px;
+        align-items: center;
+    }
+
+    .hero-content { position: relative; z-index: 2; }
+
+    .hero-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 14px;
+        padding: 6px 15px;
+        border-radius: 999px;
+        background-color: #fff;
+        color: #e02424;
+        border: 1px solid #ffb199;
+        font-size: 12px;
+        font-weight: 900;
+        box-shadow: var(--shadow-sm);
+    }
+    .hero-tag i { font-style: normal; }
+
+    .main-title {
+        margin: 0 0 16px;
+        color: #1c1c1c;
+        font-size: clamp(56px, 9vw, 96px);
+        font-weight: 900;
+        line-height: 1.0;
+        letter-spacing: -0.06em;
+        text-shadow: 0 1px 0 rgba(255,255,255,.7);
+    }
+    .main-title .tt-word { display: block; }
+    .main-title .tt-accent { color: var(--primary-red); }
+    .main-title .tt-edition {
+        display: block;
+        margin-bottom: 14px;
+        font-size: clamp(15px, 1.8vw, 19px);
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        color: #777;
+    }
+
+    .sub-copy {
+        max-width: 580px;
+        margin: 0 auto 18px;
+        color: #444;
+        font-size: clamp(19px, 2.4vw, 25px);
+        line-height: 1.6;
+        font-weight: 650;
+        letter-spacing: -0.03em;
+    }
+
+    .hero-period {
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    .hero-period em {
+        font-style: normal;
+        padding: 5px 13px;
+        border-radius: 999px;
+        background: var(--primary-red);
+        color: #fff;
+        font-size: 12.5px;
+        font-weight: 800;
+        letter-spacing: -0.01em;
+        white-space: nowrap;
+    }
+    .hero-period b {
+        font-size: clamp(16px, 2.2vw, 21px);
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        color: #1c1c1c;
+    }
+
+    .hero-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 6px;
+    }
+
+    .hero-btn {
+        min-height: 66px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        padding: 0 28px;
+        border-radius: 16px;
+        color: var(--white);
+        font-size: 18px;
+        font-weight: 900;
+        box-shadow: var(--shadow-red);
+        transition: transform .14s ease, box-shadow .3s ease;
+    }
+    .hero-btn span { font-size: 12.5px; font-weight: 650; opacity: .92; }
+    .hero-btn:hover { transform: translateY(-2px); }
+    .hero-btn.member { background: var(--btn-red); box-shadow: var(--shadow-red); }
+    .hero-btn.guest { background: #1f1f22; box-shadow: 0 14px 30px rgba(0,0,0,.18); }
+
+    .hero-image-container {
+        position: relative;
+        z-index: 1;
+        width: min(96%, 580px);
+        margin: 0 auto;
+    }
+    .hero-image-container img {
+        width: 100%; height: auto;
+        filter: drop-shadow(0 14px 18px rgba(0,0,0,0.12));
+    }
+    .hero-float {
+        position: absolute;
+        top: 8%;
+        right: -2%;
+        z-index: 3;
+        padding: 8px 14px;
+        border-radius: 14px;
+        background: #fff;
+        box-shadow: var(--shadow-md);
+        font-size: 12px;
+        font-weight: 900;
+        color: #1c1c1c;
+        animation: floaty 3s ease-in-out infinite;
+    }
+    .hero-float b { color: var(--primary-red); }
+    @keyframes floaty {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-8px); }
+    }
+
+    /* trust bar */
+    .trust-container {
+        position: relative;
+        z-index: 2;
+        width: min(100% - 48px, 960px);
+        margin: -22px auto 0;
+        padding-bottom: clamp(28px, 4vw, 48px);
+    }
+    .trust-grid {
+        display: grid;
+        grid-template-columns: 1fr 1px 1fr 1px 1fr;
+        align-items: center;
+        padding: 22px 15px;
+        border: 1px solid #f0e3c4;
+        border-radius: 18px;
+        background: #fff;
+        box-shadow: var(--shadow-md);
+    }
+    .trust-num {
+        color: var(--primary-red);
+        font-size: clamp(26px, 4.4vw, 40px);
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: -0.04em;
+    }
+    .trust-num small { font-size: .55em; font-weight: 900; }
+    .trust-txt { margin-top: 7px; color: #777; font-size: 13px; font-weight: 700; }
+    .v-line { height: 46px; background: #eee; }
+
+    /* ====================== Schedule (dark timeline) ====================== */
+    .schedule-dark {
+        position: relative;
+        background:
+            radial-gradient(circle at 14% 0%, rgba(255,204,0,.12), transparent 42%),
+            radial-gradient(circle at 92% 100%, rgba(224,36,36,.16), transparent 44%),
+            #1f1f22;
+        color: #fff;
+        overflow: hidden;
+    }
+    .schedule-head { margin-bottom: clamp(34px, 5vw, 56px); }
+    .schedule-dark .section-title { color: #fff; margin-bottom: 10px; }
+    .eyebrow-dark {
+        display: inline-flex; align-items: center; gap: 7px;
+        margin-bottom: 14px; padding: 6px 13px; border-radius: 999px;
+        background: rgba(255,204,0,.14); color: var(--primary-yellow);
+        border: 1px solid rgba(255,204,0,.32);
+        font-size: 12px; font-weight: 900; letter-spacing: .08em;
+    }
+    .schedule-sub {
+        max-width: 580px; margin: 0 auto;
+        color: rgba(255,255,255,.7);
+        font-size: clamp(15px, 2vw, 18px); font-weight: 600; letter-spacing: -0.02em;
+    }
+
+    .timeline { display: grid; grid-template-columns: 1fr; gap: 18px; }
+    .tl-card {
+        position: relative;
+        padding: 30px 24px 26px;
+        border: 1px solid rgba(255,255,255,.16);
+        border-radius: 20px;
+        background: rgba(255,255,255,.05);
+        text-align: center;
+        transition: transform .35s ease, border-color .35s ease, background .35s ease;
+    }
+    .tl-card.is-now { border-color: rgba(255,204,0,.6); background: rgba(255,204,0,.08); }
+    .tl-card:hover { transform: translateY(-5px); border-color: rgba(255,204,0,.55); background: rgba(255,255,255,.09); }
+    .tl-flag {
+        position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+        padding: 4px 12px; border-radius: 999px;
+        background: var(--primary-yellow); color: #7a1f00;
+        font-size: 11px; font-weight: 900; white-space: nowrap;
+    }
+    .tl-num {
+        margin-bottom: 12px; color: var(--primary-yellow);
+        font-size: clamp(46px, 7vw, 62px); font-weight: 900; line-height: 1;
+        letter-spacing: -0.04em; text-shadow: 0 6px 18px rgba(255,204,0,.22);
+    }
+    .tl-step { margin-bottom: 10px; font-size: clamp(20px, 2.5vw, 24px); font-weight: 900; letter-spacing: -0.04em; }
+    .tl-date { margin-bottom: 12px; color: #fff; font-size: clamp(15px, 1.7vw, 17px); font-weight: 800; letter-spacing: -0.02em; }
+    .tl-note { color: rgba(255,255,255,.64); font-size: clamp(13.5px, 1.5vw, 15px); font-weight: 600; line-height: 1.65; }
+    .tl-card:not(:last-child)::after {
+        content: "↓"; position: absolute; left: 50%; bottom: -16px; transform: translateX(-50%);
+        color: rgba(255,204,0,.65); font-size: 18px; font-weight: 900; line-height: 1;
+    }
+
+    .schedule-cta-wrap { margin-top: clamp(30px, 4vw, 46px); text-align: center; }
+    .schedule-cta {
+        display: inline-flex; flex-direction: column; align-items: center; gap: 3px;
+        min-width: min(100%, 360px); padding: 18px 40px; border-radius: 16px;
+        background: var(--btn-red); color: #fff;
+        font-size: clamp(17px, 2.2vw, 20px); font-weight: 900; letter-spacing: -0.03em;
+        box-shadow: var(--shadow-red);
+        transition: transform .15s ease, box-shadow .3s ease;
+    }
+    .schedule-cta span { font-size: 12px; font-weight: 700; letter-spacing: 0; color: rgba(255,255,255,.88); }
+    .schedule-cta:hover { transform: translateY(-2px); box-shadow: 0 18px 36px rgba(224,36,36,.42); }
+    .schedule-cta:active { transform: scale(.98); }
+
+    .ysat-intro { margin-top: clamp(8px, 2vw, 16px); text-align: center; }
+    .ysat-intro .section-title { margin-bottom: 6px; font-size: clamp(26px, 3.6vw, 40px); }
+    .ysat-en { margin: 0 0 26px; color: var(--primary-yellow); font-size: clamp(14px, 1.9vw, 18px); font-weight: 800; letter-spacing: .02em; }
+    .ysat-checks { display: inline-grid; gap: 13px; margin: 0; padding: 0; list-style: none; text-align: left; }
+    .ysat-checks li {
+        display: grid; grid-template-columns: 26px 1fr; gap: 13px; align-items: start;
+        color: rgba(255,255,255,.85); font-size: clamp(15px, 1.9vw, 17.5px); font-weight: 600;
+        line-height: 1.6; letter-spacing: -0.02em;
+    }
+    .ysat-checks i {
+        width: 26px; height: 26px; display: grid; place-items: center; border-radius: 8px;
+        background: rgba(255,204,0,.16); color: var(--primary-yellow);
+        font-style: normal; font-weight: 900; font-size: 14px;
+    }
+    .ysat-checks b { color: #fff; font-weight: 800; }
+
+    .overview-card {
+        margin-top: clamp(30px, 4vw, 44px);
+        padding: clamp(22px, 3vw, 32px);
+        border: 1px solid rgba(255,255,255,.14); border-radius: 20px; background: rgba(255,255,255,.04);
+    }
+    .overview-title { margin: 0 0 22px; color: #fff; font-size: clamp(23px, 3vw, 32px); font-weight: 900; letter-spacing: -0.04em; text-align: center; }
+    .overview-list { display: grid; gap: 12px; max-width: 640px; margin: 0 auto; }
+    .ov-row { display: grid; grid-template-columns: 108px 1fr; gap: 12px; align-items: stretch; }
+    .ov-label {
+        display: inline-flex; align-items: center; justify-content: center; padding: 12px 12px;
+        border-radius: 999px; background: var(--btn-red); color: #fff;
+        font-size: 15px; font-weight: 900; letter-spacing: -0.03em; text-align: center; white-space: nowrap;
+    }
+    .ov-value {
+        display: flex; align-items: center; justify-content: flex-start; text-align: left;
+        padding: 12px 18px; border-radius: 12px;
+        background: rgba(255,255,255,.06); color: rgba(255,255,255,.9);
+        font-size: clamp(14.5px, 1.7vw, 16px); font-weight: 600; line-height: 1.5; letter-spacing: -0.02em;
+    }
+    .ov-foot { margin: 22px 0 0; color: rgba(255,255,255,.5); font-size: 12.5px; font-weight: 500; line-height: 1.7; text-align: center; }
+
+    /* ====================== About (light) : What is YSAT + 평가 개요 ======================
+       일정(다크)과 시각적으로 분리되는 별도 영역 — 따뜻한 아이보리 톤 */
+    .about-sec {
+        background:
+            radial-gradient(circle at 50% 0%, #ffe9e7, transparent 58%),
+            #fff4f3;
+    }
+    .about-sec .section-title { color: #1c1c1c; }
+    .about-sec .eyebrow-dark {
+        background: #fff2f2; color: var(--primary-red);
+        border-color: rgba(224,36,36,.2);
+    }
+    .about-sec .ysat-en { color: var(--primary-red); }
+    .about-sec .ysat-checks li { color: #4a4a4a; }
+    .about-sec .ysat-checks i { background: #fff0ef; color: var(--primary-red); }
+    .about-sec .ysat-checks b { color: #1c1c1c; }
+    .about-sec .overview-card {
+        background: #fff; border: 1px solid #f0e3c4; box-shadow: var(--shadow-md);
+    }
+    .about-sec .overview-title { color: #1c1c1c; }
+    .about-sec .ov-value { background: #f6f7f9; color: #333; }
+    .about-sec .ov-foot { color: #999; }
+
+    /* ====================== Points ====================== */
+    .point-grid { display: grid; grid-template-columns: 1fr; gap: 18px; width: min(100%, 980px); margin: 0 auto; }
+    .point-card {
+        text-align: left; border: 1px solid #eee; border-radius: 18px; padding: 28px;
+        box-shadow: 0 5px 16px rgba(0,0,0,0.035); background: #fff;
+    }
+    .point-text { min-width: 0; }
+    .point-tag {
+        display: inline-block; margin-bottom: 10px; padding: 4px 9px; border-radius: 6px;
+        background: var(--primary-red); color: #fff; font-size: 11px; font-weight: 900;
+    }
+    .point-tit { margin-bottom: 9px; font-size: clamp(23px, 2.8vw, 30px); font-weight: 900; line-height: 1.32; letter-spacing: -0.035em; }
+    .point-sub { color: #666; font-size: clamp(16px, 1.8vw, 18px); line-height: 1.7; }
+    .point-img { width: 100%; margin-top: 16px; border: 1px solid #eee; border-radius: 10px; background: #fafafa; aspect-ratio: 16 / 9; object-fit: cover; }
+    .point-card.benefit { border: 1px solid #eee; background-color: #fff; }
+    .point-card.benefit.active { transform: none; box-shadow: 0 5px 16px rgba(0,0,0,0.035); animation: none; }
+    @keyframes pulse-red {
+        0% { box-shadow: 0 0 0 0 rgba(224, 36, 36, 0.35); }
+        70% { box-shadow: 0 0 0 12px rgba(224, 36, 36, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(224, 36, 36, 0); }
+    }
+
+    /* ====================== Report Slider ====================== */
+    .report-preview { background-color: #fcfcfc; }
+    .report-layout { display: grid; grid-template-columns: 1fr; gap: 26px; align-items: center; width: min(100%, 1040px); margin: 0 auto; }
+    .dynamic-caption { min-height: 48px; margin: 0 0 22px; color: #333; font-size: clamp(20px, 2.4vw, 27px); font-weight: 900; line-height: 1.38; letter-spacing: -0.035em; }
+    .dynamic-caption span { display: block; margin-top: 4px; color: var(--primary-red); font-size: 14px; }
+    .slider-window { position: relative; overflow: hidden; border: 1px solid #eee; border-radius: 22px; box-shadow: 0 16px 34px rgba(0,0,0,0.10); background: #fff; }
+    .slider-track { display: flex; transition: transform .5s ease-in-out; }
+    .slider-slide { min-width: 100%; }
+    .slider-slide img { width: 100%; aspect-ratio: 16 / 11; object-fit: contain; background: #f6f6f6; }
+    .slider-dots { margin-top: 15px; text-align: center; }
+    .dot { display: inline-block; width: 8px; height: 8px; margin: 0 5px; border-radius: 50%; background-color: #bbb; cursor: pointer; transition: .3s; border: none; padding: 0; }
+    .dot.active { width: 22px; border-radius: 4px; background-color: var(--primary-red); }
+
+    /* ====================== Reviews ====================== */
+    .review-sec { background: #1a1a1a; color: #fff; }
+    .review-sec .section-title { color: #fff; }
+    .sat-badge {
+        display: inline-flex; align-items: center; gap: 10px;
+        margin: 0 auto 30px; padding: 12px 22px; border-radius: 999px;
+        background: rgba(255,204,0,.12); border: 1px solid rgba(255,204,0,.34);
+    }
+    .sat-badge .sat-stars { color: var(--primary-yellow); letter-spacing: -2px; font-size: 16px; }
+    .sat-badge b { color: #fff; font-size: 15px; font-weight: 900; }
+    .sat-badge b em { color: var(--primary-yellow); font-style: normal; font-size: 20px; }
+
+    .review-grid { display: grid; grid-template-columns: 1fr; gap: 22px; }
+    .review-box { padding: 28px; border-radius: 18px; background: rgba(255,255,255,0.08); text-align: left; }
+    .review-top { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+    .review-avatar {
+        width: 42px; height: 42px; flex: none; border-radius: 50%;
+        display: grid; place-items: center; font-weight: 900; font-size: 15px; color: #1a1a1a;
+        background: linear-gradient(135deg, var(--primary-yellow), #ffd84d);
+    }
+    .review-who { font-size: 14px; font-weight: 800; color: #fff; }
+    .review-who span { display: block; color: #9a9a9a; font-weight: 600; font-size: 12.5px; }
+    .stars { margin-bottom: 9px; color: var(--primary-yellow); letter-spacing: -2px; }
+    .review-head { margin-bottom: 10px; color: #fff; font-size: clamp(19px, 2.3vw, 23px); font-weight: 900; line-height: 1.35; letter-spacing: -0.035em; }
+    .review-body { color: #d2d2d2; font-size: clamp(16px, 1.8vw, 18px); line-height: 1.7; }
+    .review-disclaimer { margin: 22px 0 0; color: #999; font-size: 12px; text-align: center; }
+
+    .teacher-wrap { margin-top: clamp(36px, 5vw, 56px); }
+    .teacher-title { text-align: center; color: var(--primary-yellow); font-size: 14px; font-weight: 900; letter-spacing: .04em; margin-bottom: 18px; }
+    .teacher-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    .teacher-box {
+        display: grid; grid-template-columns: 40px 1fr; gap: 14px; align-items: start;
+        padding: 18px; border-radius: 16px; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); text-align: left;
+    }
+    .teacher-ic { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; font-size: 18px; background: rgba(255,204,0,.16); }
+    .teacher-box p { margin: 0; color: #ddd; font-size: clamp(16px, 1.8vw, 18px); line-height: 1.65; }
+    .teacher-box em { display: block; margin-top: 8px; color: #888; font-style: normal; font-size: 12px; font-weight: 700; }
+
+    /* ====================== FAQ ====================== */
+    .faq-sec { background: #fff; }
+    .faq-list { width: min(100%, 760px); margin: 0 auto; display: grid; gap: 12px; }
+    .faq-item { border: 1px solid #eee; border-radius: 14px; background: #fff; box-shadow: 0 5px 14px rgba(0,0,0,.03); overflow: hidden; }
+    .faq-q {
+        width: 100%; display: flex; align-items: center; gap: 12px; justify-content: space-between;
+        padding: 18px 20px; background: none; border: none; cursor: pointer; text-align: left;
+        font-size: clamp(16px, 2vw, 18px); font-weight: 800; letter-spacing: -0.03em; color: #1c1c1c;
+    }
+    .faq-q .q-mark { color: var(--primary-red); font-weight: 900; margin-right: 2px; }
+    .faq-q .q-ic { flex: none; width: 26px; height: 26px; border-radius: 50%; background: #fff2f2; color: var(--primary-red); display: grid; place-items: center; font-weight: 900; transition: transform .3s ease; }
+    .faq-item.open .q-ic { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+    .faq-a-inner { padding: 0 20px 20px; color: #666; font-size: clamp(16px, 1.8vw, 18px); line-height: 1.75; text-align: left; }
+
+    /* ====================== Bottom / CTA ====================== */
+    .bottom-msg {
+        padding: clamp(46px, 6vw, 82px) 0;
+        background:
+            radial-gradient(circle at 50% -10%, #fff3e0, transparent 60%),
+            #fff;
+    }
+    .msg-title { margin: 0 0 12px; font-size: clamp(30px, 4.6vw, 50px); font-weight: 900; line-height: 1.22; letter-spacing: -0.05em; }
+    .msg-desc { margin: 0 0 28px; color: #555; font-size: clamp(18px, 2.2vw, 22px); font-weight: 650; line-height: 1.6; }
+
+    .final-actions { display: flex; flex-direction: column; justify-content: center; gap: 14px; max-width: 420px; margin: 0 auto; }
+    .final-btn {
+        min-height: 68px; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+        padding: 0 26px; border-radius: 16px; color: #fff; font-size: clamp(19px, 2.2vw, 22px); font-weight: 900; letter-spacing: -0.02em;
+        transition: transform .14s ease;
+    }
+    .final-btn span { font-size: 12.5px; font-weight: 600; opacity: .92; }
+    .final-btn:hover { transform: translateY(-2px); }
+    .final-btn.member { background: var(--btn-red); box-shadow: var(--shadow-red); }
+    .final-btn.guest { background: #1f1f22; box-shadow: 0 14px 30px rgba(0,0,0,.18); }
+
+    .apply-note { margin: 24px auto 0; max-width: 600px; color: #888; font-size: 13.5px; font-weight: 600; line-height: 1.7; letter-spacing: -0.02em; text-align: center; }
+
+    .notice-section { padding: 24px 0 48px; background: #f5f5f5; color: #888; font-size: 12.5px; }
+    .notice-section .bold { margin-bottom: 10px; color: #333; font-weight: 900; }
+    .notice-section ul { margin: 0; padding-left: 17px; line-height: 1.8; }
+
+
+
+    /* ====================== Hero proof / 상담 가치 강화 ====================== */
+    .hero-note {
+        margin: 14px 0 0;
+        color: #6b6b6b;
+        font-size: clamp(13.5px, 1.5vw, 15.5px);
+        font-weight: 600;
+        line-height: 1.65;
+        letter-spacing: -0.02em;
+    }
+    .hero-mini-proof {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        width: 100%;
+        margin: 0;
+        position: relative;
+        z-index: 4;
+        background: #f6f6f4;
+        border-top: 1px solid #ececec;
+        padding: clamp(40px, 5vw, 60px) max(24px, calc((100% - 1040px) / 2));
+    }
+    .proof-chip {
+        display: grid;
+        grid-template-columns: 46px 1fr;
+        gap: 14px;
+        align-items: center;
+        padding: 20px 22px;
+        border-radius: 18px;
+        background: #fff;
+        border: 1px solid #ececec;
+        box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+        text-align: left;
+    }
+    .proof-ic {
+        width: 46px;
+        height: 46px;
+        display: grid;
+        place-items: center;
+        border-radius: 14px;
+        background: #fff2f2;
+        font-size: 22px;
+    }
+    .proof-chip b {
+        display: block;
+        color: #1c1c1c;
+        font-size: clamp(17px, 2vw, 21px);
+        font-weight: 900;
+        letter-spacing: -0.04em;
+    }
+    .proof-chip span {
+        display: block;
+        margin-top: 3px;
+        color: #666;
+        font-size: clamp(14px, 1.6vw, 16px);
+        font-weight: 650;
+        line-height: 1.55;
+        letter-spacing: -0.02em;
+    }
+
+    .consult-sec {
+        background:
+            radial-gradient(circle at 14% 8%, rgba(255,204,0,.22), transparent 34%),
+            radial-gradient(circle at 86% 20%, rgba(224,36,36,.12), transparent 34%),
+            #fffaf0;
+    }
+    .consult-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        align-items: center;
+    }
+    .consult-copy { text-align: center; }
+    .consult-copy .section-desc { margin-bottom: 24px; }
+    .consult-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 9px 14px;
+        border-radius: 999px;
+        background: #1f1f22;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: -0.02em;
+    }
+    .consult-flow {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+    .consult-card {
+        position: relative;
+        display: grid;
+        grid-template-columns: 52px 1fr;
+        gap: 16px;
+        align-items: start;
+        padding: 22px;
+        border-radius: 22px;
+        background: #fff;
+        border: 1px solid #f0e3c4;
+        box-shadow: 0 12px 28px rgba(0,0,0,.07);
+        text-align: left;
+    }
+    .consult-card:not(:last-child)::after {
+        content: "↓";
+        position: absolute;
+        left: 26px;
+        bottom: -16px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: var(--primary-red);
+        color: #fff;
+        font-weight: 900;
+        box-shadow: var(--shadow-red);
+    }
+    .consult-no {
+        width: 52px;
+        height: 52px;
+        display: grid;
+        place-items: center;
+        border-radius: 16px;
+        background: linear-gradient(135deg, #ff5a3c, #e02424);
+        color: #fff;
+        font-family: var(--font-fig);
+        font-size: 21px;
+        font-weight: 900;
+    }
+    .consult-card h3 {
+        margin: 0 0 7px;
+        color: #1c1c1c;
+        font-size: clamp(20px, 2.3vw, 25px);
+        font-weight: 900;
+        letter-spacing: -0.045em;
+        line-height: 1.3;
+    }
+    .consult-card p {
+        margin: 0;
+        color: #626262;
+        font-size: clamp(15.5px, 1.7vw, 17.5px);
+        font-weight: 600;
+        line-height: 1.65;
+        letter-spacing: -0.02em;
+    }
+    .consult-card b { color: var(--primary-red); font-weight: 900; }
+    .consult-card.is-focus {
+        border: 2px solid var(--primary-red);
+        box-shadow: 0 18px 36px rgba(224,36,36,.16);
+    }
+
+    /* ====================== Scroll reveal ====================== */
+    .reveal { opacity: 0; transform: translateY(26px); transition: opacity .72s ease, transform .72s ease; will-change: opacity, transform; }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    .delay-1 { transition-delay: .08s; }
+    .delay-2 { transition-delay: .16s; }
+    .delay-3 { transition-delay: .24s; }
+
+    /* ====================== Tablet 640px+ ====================== */
+    @media (min-width: 640px) {
+        .container { width: min(100% - 64px, 1120px); }
+        .desktop-only { display: inline; }
+        .timeline { grid-template-columns: repeat(3, 1fr); gap: 26px; }
+        .tl-card:not(:last-child)::after { content: "→"; left: auto; right: -22px; bottom: auto; top: 50%; transform: translateY(-50%); font-size: 24px; }
+        .hero-actions { flex-direction: row; justify-content: center; align-items: stretch; }
+        .hero-btn { min-width: 244px; flex: 1; }
+        .trust-grid { padding: 26px 20px; }
+        .point-card { display: grid; grid-template-columns: minmax(0, 440px) 340px; justify-content: center; gap: clamp(28px, 4vw, 56px); align-items: center; padding: 32px clamp(28px, 5vw, 60px); }
+        .point-img { margin-top: 0; aspect-ratio: 4 / 3; }
+        .hero-mini-proof { grid-template-columns: repeat(3, 1fr); }
+        .review-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        .teacher-grid { grid-template-columns: 1fr 1fr; }
+        .final-actions { flex-direction: row; max-width: 640px; }
+    }
+
+    /* ====================== Desktop 960px+ ====================== */
+    @media (min-width: 960px) {
+        header.site-header { top: 50px; }
+        .header-nav { display: flex; }
+        .header-cta { display: flex; }
+        .badge-live { display: none; }
+        .hero-grid { grid-template-columns: .98fr 1.02fr; gap: 64px; }
+        .hero-content { text-align: center; }
+        .hero-tag, .hero-period { align-self: center; }
+        .sub-copy { margin-left: 0; margin-right: 0; }
+        .hero-actions { justify-content: center; }
+        .hero-image-container { width: min(100%, 600px); }
+        .trust-container { margin-top: -30px; }
+        .report-layout { grid-template-columns: .86fr 1.14fr; gap: 54px; align-items: center; }
+        .report-copy { text-align: left; }
+        .report-copy .section-desc { margin-left: 0; margin-right: 0; }
+        .consult-layout { grid-template-columns: .88fr 1.12fr; gap: 56px; }
+        .consult-copy { text-align: left; }
+        .consult-copy .section-desc { margin-left: 0; margin-right: 0; }
+    }
+
+    @media (min-width: 1200px) {
+        .page-wrapper { border-radius: 0; }
+    }
+
+    /* ====================== Mobile <=520px ====================== */
+    @media (max-width: 520px) {
+        .countdown-inner { grid-template-columns: 1fr; gap: 7px; padding: 9px 0; text-align: center; }
+        .countdown-copy { justify-content: center; }
+        .countdown-timer { justify-content: center; }
+        .countdown-link { display: none; }
+        header.site-header { top: 74px; }
+        .header-inner { min-height: 56px; width: min(100% - 32px, 1060px); }
+        .logo { font-size: 15px; }
+        .hero-new { padding-top: 34px; }
+        .hero-btn { width: 100%; }
+        .trust-num { font-size: 24px; }
+        .trust-txt { font-size: 11px; }
+        .trust-grid { padding: 18px 8px; }
+        .trust-container { width: min(100% - 32px, 860px); }
+        .section { border-bottom-width: 7px; }
+        .point-img { aspect-ratio: 4 / 3; }
+        .slider-slide img { aspect-ratio: 16 / 12; }
+        .hero-float { font-size: 11px; right: 2%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+        .reveal { opacity: 1; transform: none; }
+    }
+    /* ===== 상단 신뢰 지표(stat) ===== */
+    .proof-stat { text-align: center; padding: 4px 6px; }
+    .proof-stat + .proof-stat { border-left: 1px solid #e4e4df; }
+    .proof-stat .stat-num { display: block; font-family: var(--font-fig); font-variant-numeric: tabular-nums; color: var(--primary-red); font-size: clamp(30px, 5vw, 46px); font-weight: 900; line-height: 1; letter-spacing: -0.04em; }
+    .proof-stat .stat-num small { font-size: .5em; font-weight: 900; }
+    .proof-stat span { display: block; margin-top: 8px; color: #555; font-size: clamp(12.5px, 1.5vw, 15px); font-weight: 700; letter-spacing: -0.02em; }
+
+    /* ===== 섹션 흐름 재정렬 (정의→가치→리포트→일정) ===== */
+    #top { display: flex; flex-direction: column; }
+    #top > .hero-new { order: 0; }
+    #top > .hero-mini-proof { order: 1; }
+    #top > #about { order: 3; }
+    #top > #schedule { order: 2; }
+    #top > #why { order: 4; }
+    #top > #report { order: 5; }
+    #top > #consulting { order: 6; }
+    #top > #reviews { order: 7; }
+    #top > #faq { order: 8; }
+    #top > #apply { order: 9; }
+    #top > .notice-section { order: 10; }
+</style>
+</head>
+
+<body>
+<div class="countdown-banner" role="region" aria-label="제11회 YSAT 사전 접수 마감 카운트다운">
+    <div class="countdown-inner">
+        <div class="countdown-copy">
+            <span class="cd-badge">마감 임박</span>
+            <strong>제11회 YSAT 무료 사전 접수</strong>
+            <span>무료 응시권 신청 ~2026년 8월 31일(월)</span>
+        </div>
+        <div class="countdown-timer" aria-live="polite">
+            <span>마감까지</span>
+            <b id="countdownText">계산 중</b>
+        </div>
+        <a class="countdown-link" href="#apply">무료 접수</a>
+    </div>
+</div>
+
+<div class="page-wrapper">
+
+
+
+    <main id="top">
+        <section class="hero-new">
+            <div class="container hero-grid">
+                <div class="hero-content text-center">
+                    <h1 class="main-title reveal delay-1">
+                        <span class="tt-edition">제11회</span>
+                        <span class="tt-word">윤선생</span> 
+                        <span class="tt-word tt-accent">학력평가</span>
+                    </h1>
+                    <p class="sub-copy reveal delay-2">
+                        점수만 남는 시험 대신<br> 2학기에 진짜 집중해야 할 다음 공부 방향을 확인하세요.
+                    </p>
+                    <div class="hero-period reveal delay-2">
+                        <em>접수 기간</em>
+                        <b>8월 18일(화) ~ 8월 31일(월)</b>
+                    </div>
+                    <div class="hero-actions reveal delay-3">
+                        <a class="hero-btn member" href="https://leveltest.yoons.com/goPeExamByHQ" target="_blank" rel="noopener">
+                            무료 접수하기 <span>(윤선생 회원 전용)</span>
+                        </a>
+                        <a class="hero-btn guest" href="https://www.yoons.com/experience/consultationRequest#event-position" target="_blank" rel="noopener">
+                            무료 응시권 받기 <span>(비회원 전용)</span>
+                        </a>
+                    </div>
+                    <p class="hero-note">
+                        ※ 비회원은 학습상담 신청 시 1만 5천원 상당의 무료 응시권을 100% 증정합니다.
+                    </p>
+                </div>
+
+                <div class="hero-image-container reveal delay-2">
+                    <img src="hero_main.png" alt="태블릿으로 온라인 학력평가에 응시하는 학생" loading="eager">
+                </div>
+            </div>
+
+                <div class="hero-mini-proof" aria-label="윤선생 학력평가 신뢰 지표">
+            <div class="proof-stat reveal"><b class="stat-num">15<small>만+</small></b><span>누적 응시자 수</span></div>
+            <div class="proof-stat reveal delay-1"><b class="stat-num">70<small>%</small></b><span>재응시율</span></div>
+            <div class="proof-stat reveal delay-2"><b class="stat-num">8.5<small>점</small></b><span>학부모 만족도</span></div>
+        </div>
+
+
+        <section id="about" class="section about-sec">
+            <div class="container">
+                <div class="ysat-intro reveal">
+                    <span class="eyebrow-dark">WHAT IS YSAT</span>
+                    <h2 class="section-title">윤선생 학력평가(YSAT)란?</h2>
+                    <p class="ysat-en">Yoon's Scholastic Assessment Test</p>
+                    <ul class="ysat-checks">
+                        <li><i>✓</i><span>전국 단위로 시행되는 <b>빅데이터 기반 온라인 영어 실력 평가</b></span></li>
+                        <li><i>✓</i><span>연 2회 응시 결과를 누적해 <b>6개월 성장 흐름</b>을 객관적으로 분석</span></li>
+                        <li><i>✓</i><span>결과 리포트를 바탕으로 <b>선생님 상담과 맞춤 학습 방향</b>까지 연결</span></li>
+                    </ul>
+                </div>
+
+                <div class="overview-card reveal">
+                    <h3 class="overview-title">평가 개요</h3>
+                    <div class="overview-list">
+                        <div class="ov-row"><span class="ov-label">대상</span><span class="ov-value">미취학, 초등, 중등, 고등 전 학년</span></div>
+                        <div class="ov-row"><span class="ov-label">영역</span><span class="ov-value">① 파닉스/어휘 ② 듣기/말하기 ③ 읽기/쓰기</span></div>
+                        <div class="ov-row"><span class="ov-label">문항 수</span><span class="ov-value">기본 35문항 (수준에 따라 추가문항 최대 10문항)</span></div>
+                        <div class="ov-row"><span class="ov-label">문항 형태</span><span class="ov-value">객관식 / 주관식</span></div>
+                        <div class="ov-row"><span class="ov-label">시험 시간</span><span class="ov-value">45분~60분 (제한 시간 기준)</span></div>
+                    </div>
+                    <p class="ov-foot">※ 응시자의 영역별 기본문항 정답률이 80% 이상일 경우<br>정확한 실력 측정을 위해 추가문항이 제공됩니다.</p>
+                </div>
+            </div>
+        </section>
+
+
+        </section>
+
+
+
+        <section id="schedule" class="section schedule-dark" style="border-bottom:none;">
+            <div class="container">
+                <div class="schedule-head text-center">
+                    <span class="eyebrow-dark reveal">STEP GUIDE</span>
+                    <h2 class="section-title reveal delay-1">일정 안내</h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="tl-card is-now reveal">
+                        <span class="tl-flag">지금 접수하세요</span>
+                        <div class="tl-num">1</div>
+                        <div class="tl-step">사전 접수</div>
+                        <div class="tl-date">8월 18일(화) ~ 8월 31일(월)</div>
+                        <div class="tl-note">응시 기간 내 상시 접수 가능</div>
+                    </div>
+                    <div class="tl-card reveal delay-1">
+                        <div class="tl-num">2</div>
+                        <div class="tl-step">시험 응시</div>
+                        <div class="tl-date">9월 1일(화) ~ 9월 8일(화)</div>
+                        <div class="tl-note">알림톡으로 발송된<br>개별 링크를 통해 응시</div>
+                    </div>
+                    <div class="tl-card reveal delay-2">
+                        <div class="tl-num">3</div>
+                        <div class="tl-step">결과 확인</div>
+                        <div class="tl-date">9월 15일(화)</div>
+                        <div class="tl-note">알림톡으로 리포트 확인</div>
+                    </div>
+                </div>
+
+                <div class="schedule-cta-wrap reveal delay-2">
+                    <a class="schedule-cta" href="#apply">
+                        학력평가 사전 접수하기
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="why" class="section text-center">
+            <div class="container">
+                <span class="eyebrow reveal">왜 YSAT인가요?</span>
+                <h2 class="section-title reveal delay-1">왜 <span class="highlight">윤선생 학력평가</span>인가요?</h2>
+   
+
+                <div class="point-grid">
+                    <div class="point-card reveal">
+                        <div class="point-text">
+                            <span class="point-tag">POINT 01 검증</span>
+                            <div class="point-tit">15만 데이터가 만든 <br>정밀한 이정표</div>
+                            <div class="point-sub">방대한 전국 단위 성적 데이터 비교를 통해<br>우리 아이의 객관적 위치 확인</div>
+                        </div>
+                        <img src="img-point-1.png" class="point-img" alt="15만 명 누적 응시 그래프" loading="lazy">
+                    </div>
+
+                    <div class="point-card reveal delay-1">
+                        <div class="point-text">
+                            <span class="point-tag">POINT 02 맞춤</span>
+                            <div class="point-tit">실력에 맞춰 <br>실시간 난이도 조절</div>
+                            <div class="point-sub">개인별 맞춤 문항 출제로<br>현재 실력을 정밀하게 측정</div>
+                        </div>
+                        <img src="img-point-2.png" class="point-img" alt="영역별 맞춤 문항 예시" loading="lazy">
+                    </div>
+
+                    <div class="point-card reveal delay-2">
+                        <div class="point-text">
+                            <span class="point-tag">POINT 03 데이터</span>
+                            <div class="point-tit">눈으로 보는<br> 6개월 성장 추이</div>
+                            <div class="point-sub">연 2회 누적 데이터 분석을 통해<br> 우리 아이 영어 성장 흐름을 한눈에 추적</div>
+                        </div>
+                        <img src="img-point-3.png" class="point-img" alt="성적 추이 그래프" loading="lazy">
+                    </div>
+
+                    <div class="point-card benefit reveal delay-1" id="benefitCard">
+                        <div class="point-text">
+                            <span class="point-tag">POINT 04 혜택</span>
+                            <div class="point-tit">조건 없는<br> <span class="highlight">응시료 0원 혜택</span></div>
+                            <div class="point-sub"><b>교육비 부담은 완전히 비우고, 오직 실력 점검에만 집중하는 기회</b></div>
+                        </div>
+                        <img src="img-point-4.png" class="point-img" alt="무료 응시권 이미지" loading="lazy">
+                    </div>
+
+                    <div class="point-card reveal delay-2">
+                        <div class="point-text">
+                            <span class="point-tag">POINT 05 동기</span>
+                            <div class="point-tit">성취감을 증명하는<br> <span class="highlight">공식 인증서 발급</span></div>
+                            <div class="point-sub">평가 후 제공되는 인증서로<br>영어에 대한 확실한 자신감 부여</div>
+                        </div>
+                        <img src="img-point-5.png" class="point-img" alt="공식 인증서 이미지" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="report" class="section report-preview">
+            <div class="container report-layout">
+                <div class="report-copy text-center">
+                    <span class="eyebrow reveal">결과 리포트</span>
+                    <h2 class="section-title reveal delay-1">점수만 보는 게 아닌,<br><span class="highlight">다음 공부가 보이는 리포트</span></h2>
+                    <p class="section-desc reveal delay-2">
+                        전국 동일 학년 대비 위치와 영역별 강·약점을 정밀 분석하고 선생님 상담을 통해 영어 공부의 확실한 우선순위를 제시합니다.
+                    </p>
+                    <span class="consult-pill reveal delay-2">리포트 확인 후 상담으로 학습 방향 설정</span>
+                </div>
+
+                <div class="report-slider text-center reveal delay-2">
+                    <div class="dynamic-caption" id="captionText">전국 동일 학년 대비 우리 아이 위치를 한눈에<span>영역별 비교와 성장 추이 확인</span></div>
+                    <div class="slider-window">
+                        <div class="slider-track" id="sliderTrack">
+                            <div class="slider-slide"><img src="img-ysat-1.png" alt="전국 위치 및 추이 리포트 예시" loading="lazy"></div>
+                            <div class="slider-slide"><img src="img-ysat-2.png" alt="강약점 분석 리포트 예시" loading="lazy"></div>
+                            <div class="slider-slide"><img src="img-ysat-3.png" alt="오답 원인 체크 리포트 예시" loading="lazy"></div>
+                        </div>
+                    </div>
+                    <div class="slider-dots" aria-label="결과 리포트 미리보기 슬라이드 이동">
+                        <button class="dot active" type="button" aria-label="1번째 리포트 보기" onclick="moveSlide(0)"></button>
+                        <button class="dot" type="button" aria-label="2번째 리포트 보기" onclick="moveSlide(1)"></button>
+                        <button class="dot" type="button" aria-label="3번째 리포트 보기" onclick="moveSlide(2)"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="consulting" class="section consult-sec">
+            <div class="container consult-layout">
+                <div class="consult-copy">
+                    <span class="eyebrow reveal">상담 연계</span>
+                    <h2 class="section-title reveal delay-1">결과를 받은 뒤,<br><span class="highlight">선생님과 함께<br> 학습 방향을 잡으세요.</span></h2>
+                    <p class="section-desc reveal delay-2">
+                        학력평가 리포트는 확인에서 끝나지 않습니다.<br> 선생님이 리포트를 바탕으로 아이의 강점, 보완할 영역, 앞으로의 학습 순서를 자세히 상담해 드립니다.
+                    </p>
+                    <span class="consult-pill reveal delay-2">AI 상담 어시스턴트로 더 체계적인 상담 준비</span>
+                </div>
+
+                <div class="consult-flow">
+                    <div class="consult-card reveal">
+                        <div class="consult-no">01</div>
+                        <div>
+                            <h3>결과 리포트 수령</h3>
+                            <p>전국 기준 위치, 영역별 점수, 정오답과 측정목표를 한눈에 확인합니다.</p>
+                        </div>
+                    </div>
+                    <div class="consult-card reveal delay-1 is-focus">
+                        <div class="consult-no">02</div>
+                        <div>
+                            <h3>AI 분석 + 선생님 해석</h3>
+                            <p>AI 분석 데이터를 선생님이 해석해, <b>현재 성취도와 보완 우선순위</b>를 상담 핵심 포인트로 정리합니다.</p>
+                        </div>
+                    </div>
+                    <div class="consult-card reveal delay-2">
+                        <div class="consult-no">03</div>
+                        <div>
+                            <h3>학부모 상담 진행</h3>
+                            <p>점수보다 중요한 <b>“왜 이 영역을 먼저 공부해야 하는지”</b>를 구체적으로 안내받습니다.</p>
+                        </div>
+                    </div>
+                    <div class="consult-card reveal delay-3">
+                        <div class="consult-no">04</div>
+                        <div>
+                            <h3>2학기 맞춤 학습 계획</h3>
+                            <p>강점은 유지하고 약점은 보완하는 방향으로 <b>다음 학습 로드맵</b>을 설정합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="section review-sec text-center">
+            <div class="container">
+                <span class="eyebrow reveal">학부모 후기</span>
+                <h2 class="section-title reveal delay-1">먼저 경험한 학부모들의<br><span style="color:var(--primary-yellow);">솔직한 후기</span></h2>
+
+                <div class="sat-badge reveal delay-1">
+                    <b>학부모 만족도 <em>8.5</em> / 10점</b>
+                </div>
+
+                <div class="review-grid">
+                    <div class="review-box reveal">
+                        <div class="review-top">
+                            <div class="review-avatar">고</div>
+                            <div class="review-who">고*찬 학부모님<span>초3 자녀</span></div>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <div class="review-head">시험 없는 초등영어, 확실한 전국 기준 발견</div>
+                        <div class="review-body">
+                            "학교 시험이 전혀 없어서 우리 애 실력이 어느 정도인지 막막했는데, 전국 동일 학년 기준으로 위치를 파악할 수 있어 좋았어요."
+                        </div>
+                    </div>
+
+                    <div class="review-box reveal delay-1">
+                        <div class="review-top">
+                            <div class="review-avatar">한</div>
+                            <div class="review-who">한*로 학부모님<span>초4 자녀</span></div>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <div class="review-head">부족한 구멍을 정확하게 짚어주는 평가</div>
+                        <div class="review-body">
+                            "막연히 잘하고 있다고 생각했는데, 영역별로 보니 보완할 영역이 보였어요. 다음 학습 계획을 세우는 데 큰 도움이 됐습니다."
+                        </div>
+                    </div>
+
+                    <div class="review-box reveal delay-2">
+                        <div class="review-top">
+                            <div class="review-avatar">정</div>
+                            <div class="review-who">정*훈 학부모님<span>초6 자녀</span></div>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <div class="review-head">미리 보는 수능, 고학년 필수 코스</div>
+                        <div class="review-body">
+                            "미리 수능 유형의 시험을 경험해 볼 수 있어 좋았어요. 수능 영어가 요구하는 독해력과 논리력의 기초 체력을 키우는 나침반이라 생각합니다."
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="faq" class="section faq-sec text-center">
+            <div class="container">
+                <span class="eyebrow reveal">자주 묻는 질문</span>
+                <h2 class="section-title reveal delay-1">접수 전, <span class="highlight">궁금한 점</span>을 확인하세요</h2>
+                <p class="section-desc reveal delay-2">가장 많이 문의 주시는 내용을 모았습니다.</p>
+
+                <div class="faq-list">
+                    <div class="faq-item reveal">
+                        <button class="faq-q" type="button" aria-expanded="false">
+                            <span><span class="q-mark">Q.</span> 정말 무료로 응시할 수 있나요?</span>
+                            <span class="q-ic">+</span>
+                        </button>
+                        <div class="faq-a"><div class="faq-a-inner">네. 윤선생 회원은 무료로 응시 가능합니다. 비회원도 학습상담을 신청하시면 1만 5천원 상당의 무료 응시권을 100% 드립니다. (기간 한정)</div></div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <button class="faq-q" type="button" aria-expanded="false">
+                            <span><span class="q-mark">Q.</span> 어떤 기기로 응시하나요?</span>
+                            <span class="q-ic">+</span>
+                        </button>
+                        <div class="faq-a"><div class="faq-a-inner">PC 및 태블릿 환경에 최적화되어 있습니다. 접수 후 알림톡으로 발송되는 개별 링크를 통해 정해진 응시 기간 내에 응시하시면 됩니다.</div></div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <button class="faq-q" type="button" aria-expanded="false">
+                            <span><span class="q-mark">Q.</span> 몇 학년부터 응시할 수 있나요?</span>
+                            <span class="q-ic">+</span>
+                        </button>
+                        <div class="faq-a"><div class="faq-a-inner">미취학부터 초·중·고 전 학년이 응시할 수 있습니다. 실력에 맞춰 문항 난이도가 자동 조절되어 연령과 무관하게 정확한 진단이 가능합니다. 저학년은 보호자와 함께 응시를 권장합니다.</div></div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <button class="faq-q" type="button" aria-expanded="false">
+                            <span><span class="q-mark">Q.</span> 결과는 언제, 어떻게 확인하나요?</span>
+                            <span class="q-ic">+</span>
+                        </button>
+                        <div class="faq-a"><div class="faq-a-inner">9월 15일(화)에 알림톡으로 결과 리포트 링크가 발송됩니다. 전국 동일 학년 대비 위치, 영역별 강·약점, 문항별 정오답과 측정목표까지 확인할 수 있습니다. 접수 시 휴대전화 번호를 정확히 입력해 주세요.</div></div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <button class="faq-q" type="button" aria-expanded="false">
+                            <span><span class="q-mark">Q.</span> 결과 리포트 상담도 받을 수 있나요?</span>
+                            <span class="q-ic">+</span>
+                        </button>
+                        <div class="faq-a"><div class="faq-a-inner">네. 결과 리포트 확인 후 선생님과의 상담을 통해 우리 아이의 강점, 보완할 영역, 다음 학습 방향을 더 자세히 안내받을 수 있습니다. 비회원의 경우 입력한 휴대폰 번호로 인근 윤선생 센터에서 학습상담 연락을 드릴 수 있습니다.</div></div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <button class="faq-q" type="button" aria-expanded="false">
+                            <span><span class="q-mark">Q.</span> 비회원도 결과 리포트를 받을 수 있나요?</span>
+                            <span class="q-ic">+</span>
+                        </button>
+                        <div class="faq-a"><div class="faq-a-inner">네. 비회원도 동일하게 결과 리포트를 받습니다. 단, 비회원의 리포트 열람 가능 기간은 시험 접수일로부터 6개월입니다.</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="apply" class="bottom-msg text-center">
+            <div class="container reveal">
+                <p class="msg-title">2학기 영어 공부 전,<br><span class="highlight">실력부터 정확히 확인하세요.</span></p>
+                <p class="msg-desc">학력평가로 진단하고, 결과 리포트와 선생님 상담으로 우리 아이에게 맞는 학습 방향을 잡아보세요.</p>
+                 <div class="final-actions">
+                        <a class="hero-btn member" href="https://leveltest.yoons.com/goPeExamByHQ" target="_blank" rel="noopener">
+                            무료 접수하기 <span>(윤선생 회원 전용)</span>
+                        </a>
+                        <a class="hero-btn guest" href="https://www.yoons.com/experience/consultationRequest#event-position" target="_blank" rel="noopener">
+                            무료 응시권 받기 <span>(비회원 전용)</span>
+                        </a>
+                    </div>
+
+                
+                <p class="apply-note">
+                    ※ 윤선생 회원은 무료로 응시 가능하며, 자세한 내용은 해당 센터로 문의해 주세요.<br>
+                    ※ 비회원은 학습상담을 신청하시면 무료 응시권을 100% 증정합니다.
+                </p>
+            </div>
+        </section>
+
+        <section class="notice-section">
+            <div class="container">
+                <div class="bold">※ 유의사항</div>
+                <ul>
+                    <li>본 평가는 PC 및 태블릿 환경에 최적화되어 있습니다.</li>
+                    <li>저학년 응시자의 경우, 원활한 진행을 위해 보호자와 함께 응시를 권장합니다.</li>
+                    <li>평가 리포트는 알림톡으로 링크가 발송되오니 휴대전화 번호를 정확히 입력해 주시기 바랍니다.</li>
+                    <li>비회원 응시자의 경우, 리포트 열람 가능 기간은 결과 확인일로부터 6개월입니다.</li>
+                    <li>비회원 응시자의 경우, 입력한 휴대폰 번호로 인근 윤선생 센터에서 학습상담 연락을 드릴 수 있습니다.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script>
+    // [Countdown] 한국시간 2026년 8월 31일 23:59:59 기준
+    (function initCountdown() {
+        const countdownText = document.getElementById("countdownText");
+        const ctaDday = document.getElementById("ctaDday");
+        const deadline = new Date("2026-08-31T23:59:59+09:00").getTime();
+
+        function pad(num) { return String(num).padStart(2, "0"); }
+
+        function update() {
+            const distance = deadline - Date.now();
+            if (distance <= 0) {
+                if (countdownText) countdownText.textContent = "접수 마감";
+                if (ctaDday) ctaDday.textContent = "마감";
+                return;
+            }
+            const days = Math.floor(distance / 86400000);
+            const hours = Math.floor((distance / 3600000) % 24);
+            const minutes = Math.floor((distance / 60000) % 60);
+            const seconds = Math.floor((distance / 1000) % 60);
+            if (countdownText) countdownText.textContent = "D-" + days + "일 " + pad(hours) + ":" + pad(minutes) + ":" + pad(seconds);
+            if (ctaDday) ctaDday.textContent = "D-" + days;
+        }
+        update();
+        setInterval(update, 1000);
+    })();
+
+    // [Slider]
+    let currentSlide = 0;
+    const track = document.getElementById("sliderTrack");
+    const dots = document.querySelectorAll(".dot");
+    const captionText = document.getElementById("captionText");
+    const captions = [
+        "전국 동일 학년 대비 우리 아이 위치를 한눈에<span>영역별 비교와 성장 추이 확인</span>",
+        "잘하는 건 더 키우고, 부족한 건 정확히 보완<span>영역별 강·약점과 학습 우선순위 확인</span>",
+        "왜 틀렸는지까지 알아야 공부가 달라집니다<span>문항 다시보기와 측정목표로 약점 원인 체크</span>"
+    ];
+
+    function updateSlider() {
+        if (!track || !captionText) return;
+        track.style.transform = "translateX(-" + (currentSlide * 100) + "%)";
+        dots.forEach(function (dot) { dot.classList.remove("active"); });
+        if (dots[currentSlide]) dots[currentSlide].classList.add("active");
+        captionText.innerHTML = captions[currentSlide];
+    }
+    function autoPlay() { currentSlide = (currentSlide + 1) % captions.length; updateSlider(); }
+    let slideInterval = setInterval(autoPlay, 3500);
+    function moveSlide(index) {
+        clearInterval(slideInterval);
+        currentSlide = index;
+        updateSlider();
+        slideInterval = setInterval(autoPlay, 3500);
+    }
+    window.moveSlide = moveSlide;
+
+    // [FAQ Accordion]
+    (function initFaq() {
+        document.querySelectorAll(".faq-item").forEach(function (item) {
+            const btn = item.querySelector(".faq-q");
+            const panel = item.querySelector(".faq-a");
+            btn.addEventListener("click", function () {
+                const isOpen = item.classList.contains("open");
+                document.querySelectorAll(".faq-item.open").forEach(function (openItem) {
+                    if (openItem !== item) {
+                        openItem.classList.remove("open");
+                        openItem.querySelector(".faq-a").style.maxHeight = null;
+                        openItem.querySelector(".faq-q").setAttribute("aria-expanded", "false");
+                    }
+                });
+                if (isOpen) {
+                    item.classList.remove("open");
+                    panel.style.maxHeight = null;
+                    btn.setAttribute("aria-expanded", "false");
+                } else {
+                    item.classList.add("open");
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    btn.setAttribute("aria-expanded", "true");
+                }
+            });
+        });
+    })();
+
+    // [Scroll reveal + benefit pulse]
+    (function initScrollEffects() {
+        const revealTargets = document.querySelectorAll(".reveal");
+        const benefitCard = document.getElementById("benefitCard");
+
+        if (!("IntersectionObserver" in window)) {
+            revealTargets.forEach(function (t) { t.classList.add("is-visible"); });
+            if (benefitCard) benefitCard.classList.add("active");
+            return;
+        }
+        const revealObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+        revealTargets.forEach(function (t) { revealObserver.observe(t); });
+
+        if (benefitCard) {
+            const benefitObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) entry.target.classList.add("active");
+                });
+            }, { threshold: 0.45 });
+            benefitObserver.observe(benefitCard);
+        }
+    })();
+</script>
+</body>
+</html>
